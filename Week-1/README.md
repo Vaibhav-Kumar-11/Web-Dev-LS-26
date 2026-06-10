@@ -37,7 +37,7 @@ Week 2
 | 1 | [Introduction to the Web](./01-Intro-to-Web/README.md) | Client-Server model, Web Protocol basics| 1-2 hrs |
 | 2 | [Version Control with Git and GitHub](./02-VCS-Git/README.md) | VCS, Git commands and GitHub | 1-2 hrs |
 | 3 | [HTML/CSS/JAVASCRIPT](./03-HTML-CSS-JS/README.md) |JS, Refresher on HTML/CSS| 7-8 hrs |
-| 4 | [Python for Web Dev](./04-Python-Web-Dev/README.md) |Python Syntax, OOPS| 2–3 hrs |
+| 4 | [Python for Web Dev](./04-Python-Web-Dev/README.md) |Python Syntax, OOP| 2–3 hrs |
 
 ---
 
