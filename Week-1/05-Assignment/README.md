@@ -45,7 +45,7 @@ You may also propose a different component — just keep it something a person g
 A **public GitHub repository** with the following structure:
 
 ```
-your-name-bad-ui/
+your-rollno-bad-ui/
 ├── index.html          ← Your component lives here
 ├── style.css           ← All your styles
 ├── script.js           ← All interactivity
