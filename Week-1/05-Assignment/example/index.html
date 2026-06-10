@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔊 Volume Control (Definitely Normal)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="os-chrome">
+    <div class="titlebar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="titlebar-text">Sound Settings — System Preferences</span>
+    </div>
+
+    <div class="panel">
+      <h1 class="panel-title">🔊 Adjust Your Volume</h1>
+      <p class="subtitle">Please complete all steps carefully.</p>
+
+      <!-- Step 1 -->
+      <div class="step" id="step1">
+        <div class="step-label">STEP 1 OF 4 &mdash; Confirm your intent</div>
+        <p class="step-desc">Are you sure you want to change the volume?</p>
+        <div class="btn-row">
+          <button class="btn-yes" onclick="nextStep(1)">Yes, I am sure</button>
+          <button class="btn-no" onclick="cancelFlow()">No, I changed my mind</button>
+          <button class="btn-maybe" onclick="askAgain()">I don't know</button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step hidden" id="step2">
+        <div class="step-label">STEP 2 OF 4 &mdash; Select volume direction</div>
+        <p class="step-desc">Do you want the volume to go up or down?</p>
+        <div class="btn-row">
+          <button class="btn-yes" onclick="setDirection('up'); nextStep(2)">📈 Up</button>
+          <button class="btn-no" onclick="setDirection('down'); nextStep(2)">📉 Down</button>
+        </div>
+        <p class="fine-print">* Lateral volume changes not supported in this region.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step hidden" id="step3">
+        <div class="step-label">STEP 3 OF 4 &mdash; Choose adjustment amount</div>
+        <p class="step-desc">By how much? (drag to select)</p>
+        <div class="slider-wrapper">
+          <input type="range" id="amountSlider" min="1" max="100" value="5" class="chaos-slider" oninput="updateSliderLabel(this.value)" />
+          <div class="slider-label-row">
+            <span>A little</span>
+            <span id="sliderValue">5%</span>
+            <span>A lot</span>
+          </div>
+        </div>
+        <p class="fine-print" id="sliderWarning"></p>
+        <button class="btn-yes" onclick="nextStep(3)">Confirm Amount</button>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step hidden" id="step4">
+        <div class="step-label">STEP 4 OF 4 &mdash; Final confirmation</div>
+        <div id="summaryBox" class="summary-box"></div>
+        <p class="step-desc">Are you absolutely, positively sure?</p>
+        <div class="btn-row">
+          <button class="btn-yes" onclick="applyVolume()">✅ Apply Change</button>
+          <button class="btn-no" onclick="restartFlow()">🔄 Start Over</button>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="step hidden" id="stepDone">
+        <div class="result-icon" id="resultIcon">🎉</div>
+        <div class="result-msg" id="resultMsg"></div>
+        <div class="volume-bar-wrapper">
+          <div class="volume-bar-track">
+            <div class="volume-bar-fill" id="volumeBar"></div>
+          </div>
+          <span class="volume-number" id="volumeNumber">50</span>
+        </div>
+        <button class="btn-yes" style="margin-top:24px" onclick="restartFlow()">Change Volume Again</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="watermark">Designed for Maximum Convenience™</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
