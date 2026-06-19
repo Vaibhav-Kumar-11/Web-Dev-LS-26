@@ -21,7 +21,7 @@ Welcome to your Week 2 assignment for the WnCC Full Stack Web Development LS! Th
 * **Live Counter:** A persistent badge or counter displaying the global **Total Items** currently sitting in the cart.
 
 ### Innovation Metric
-> **Note:** Base functional completion does not award passing grades, **Innovation will be heavily graded**. Consider adding smart features like interactive micro-animations (Framer Motion), item filtering/search, persistent storage (`localStorage`), dummy checkout modal states, or unique UI theme toggles to stand out. We will judge you on your **creativity, design choice and features** you can think of.
+> **Note:**  Innovation will be heavily graded. Consider adding smart features like interactive micro-animations (Framer Motion), item filtering/search, persistent storage (`localStorage`), dummy checkout modal states, or unique UI theme toggles to stand out. We will judge you on your **creativity, design choice and features** you can think of.
 
 ---
 ### Figma Make
