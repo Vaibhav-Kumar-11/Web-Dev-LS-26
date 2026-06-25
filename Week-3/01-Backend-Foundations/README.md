@@ -51,4 +51,4 @@ In Week 1 you got a quick, non-technical pass at "what is the internet." That wa
 
 ---
 
-[Week 3 Overview](../README.md) | [Next: Django Basics](../02-Django-Basics/README.md)
+[Week 3 Overview](../README.md) | [Next: Django Basics](../02-Django/README.md)
