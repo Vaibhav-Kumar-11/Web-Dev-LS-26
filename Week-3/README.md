@@ -30,10 +30,6 @@ Django REST Framework (Turning Django into a JSON API)
 Auth: JWT & OAuth (Securing the API, Login with Google/GitHub)
     |
     |  An open API is a liability. This is how you control who can do what
-    v
-Connecting React to Django (CORS, Axios, the full-stack handshake)
-    |
-    |  How to connect your frontend React app with Django backend
 ```
 
 ## Topics
@@ -45,11 +41,10 @@ Connecting React to Django (CORS, Axios, the full-stack handshake)
 | 3 | [PostgreSQL](./03-Postgres/README.md) | Relational databases, psql, connecting Django to Postgres | 4-5 hrs |
 | 4 | [Django REST Framework](./04-REST-APIs/README.md) | What an API/REST is, serializers, ViewSets, building a real API | 5-6 hrs |
 | 5 | [Auth: JWT & OAuth](./05-Auth/README.md) | Stateless auth, SimpleJWT, "Login with Google" via OAuth | 3-4 hrs |
-| 6 | [Connecting React to Django](./06-Connecting-React-Django/README.md) | CORS, Axios, environment variables, the full request lifecycle | 3-4 hrs |
 
 ---
 ## Assignment
 
-If you are ready let us go to [Assignment 3](./07-Assignment-3/README.md)
+If you are ready let us go to [Assignment 3](./06-Assignment-3/README.md)
 
 [Home](../README.md) | [Next: Week 4]()
